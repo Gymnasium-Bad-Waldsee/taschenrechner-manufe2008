@@ -2,8 +2,16 @@ def add(a, b):
     """Gibt die Summe von a und b zurück."""
     return a + b
 
-# Hier sollen die Schüler die Funktionen für Subtraktion, Multiplikation und Division selbst erstellen.
-#hallo
+def sub (a,b):
+    return a-b
+
+def mal (a,b):
+    return a*b
+
+def div (a,b):
+    return a/b
+
+
 print("Willkommen beim Taschenrechner!")
 print("Wähle eine Operation:")
 print("1. Addition")
@@ -23,13 +31,13 @@ if choice in ['1', '2', '3', '4']:
         if choice == '1':
             print(f"Das Ergebnis ist: {add(num1, num2)}")
         elif choice == '2':
-            # Hier soll die Subtraktionsfunktion aufgerufen werden
-            pass
+             print(f"Das Ergebnis ist: {sub(num1, num2)}")
+            
         elif choice == '3':
-            # Hier soll die Multiplikationsfunktion aufgerufen werden
-            pass
+             print(f"Das Ergebnis ist: {mal(num1, num2)}")
+            
         elif choice == '4':
-            # Hier soll die Divisionsfunktion aufgerufen werden
-            pass
+            print(f"Das Ergebnis ist: {div(num1, num2)}")
+            
 else:
     print("Ungültige Auswahl. Bitte wähle eine Operation zwischen 1 und 4.")
